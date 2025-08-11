@@ -48,3 +48,46 @@ aside {
         }
     }
 }
+
+@media(max-width: 1024px) {
+    main {
+        padding: 1.5rem;
+    }
+
+    aside {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #app {
+        display: flex;
+        flex-direction: column-reverse;
+        overflow: auto;
+    }
+
+    main {
+        overflow: visible;
+
+        & .main-container {
+            max-width: 100%;
+        }
+    }
+
+    aside {
+
+        & header {
+            display: flex;
+            justify-content: center;
+        }
+
+        & .aside-container {
+            max-width: 100%;
+            width: 100%;
+
+            &>img {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+}

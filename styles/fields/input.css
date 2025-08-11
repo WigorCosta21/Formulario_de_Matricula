@@ -89,3 +89,9 @@ input {
         display: none;
     }
 }
+
+@media (max-width: 768px) {
+    input {
+        font-size: var(--text-sm);
+    }
+}

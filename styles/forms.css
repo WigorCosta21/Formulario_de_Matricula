@@ -22,3 +22,19 @@ fieldset+fieldset {
     display: flex;
     gap: 1rem;
 }
+
+@media(max-width: 1024px) {
+    .actions-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    fieldset {
+        gap: 1.25rem;
+    }
+
+    legend {
+        margin-bottom: 1.25rem;
+    }
+}
